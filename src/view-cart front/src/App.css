@@ -1,0 +1,178 @@
+* {
+  font-family: "Serif";
+}
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100vh;
+}
+.view-cart {
+  background: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+  overflow: scroll;
+}
+.view-cart .btn-group button {
+  background-color: white; 
+  border: white; 
+  color: black; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+  margin-top:40px;
+  font-size: 15px;
+}
+.view-cart .btn-group button img {
+  border-radius: 8px;
+  }
+
+.view-cart .btn-group button:not(:last-child) {
+  border-right: none; 
+}
+.view-cart .btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.view-cart .btn-group button:hover {
+  background-color: white;
+}
+.view-cart .cd-cart__trigger,
+.view-cart .cd-cart__content {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  transition: transform .2s;
+}
+
+.view-cart .cd-cart--empty .cd-cart__trigger,
+.view-cart .cd-cart--empty .cd-cart__content {transform: translateY(150px);}
+.view-cart .cd-cart__layout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+  border-radius: var(--radius);
+  transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
+  transition-timing-function: cubic-bezier(.67,.17,.32,.95);
+  background: var(--cd-color-3);
+  box-shadow: 0 4px 30px rgba(#000, .17);
+}
+.view-cart .cd-cart--open .cd-cart__layout {
+  height: 100%;
+  width: 100%;
+  transition-delay: 0s;
+  display: flex;}
+  .cd-cart__product--container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .view-cart .cd-cart__product--container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .view-cart .cd-cart__product--container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .view-cart .cd-cart__product--container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .view-cart .cd-cart__product--container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .view-cart .cd-cart__product--container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .view-cart .cd-cart__product--container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .view-cart .cd-cart__product--container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .view-cart .confirm {
+    padding: 1em;
+    background-color: #0421f9;
+    color: #0d3eee;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: right;
+  }
+@keyframes cd-item-slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80px);
+    opacity: 0;
+  }}
+  .view-cart .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+  }
+  .view-cart .footer span {
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+  }
