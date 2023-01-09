@@ -1,0 +1,217 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100vh;
+}
+
+.sign-up {
+  background: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 0.5em;
+}
+.sign-up .full-name {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 0em;
+}
+.sign-up .full-name input {
+  outline: none;
+  border: none;
+}
+.sign-up .full-name input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .full-name input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .full-name input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .full-name ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.sign-up .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 0em;
+}
+.sign-up .email input {
+  outline: none;
+  border: none;
+}
+.sign-up .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .email input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.sign-up .phone {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 0em;
+}
+.sign-up .phone input {
+  outline: none;
+  border: none;
+}
+.sign-up .phone input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .phone input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .phone input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .phone ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.sign-up .username {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 0em;
+}
+.sign-up .username input {
+  outline: none;
+  border: none;
+}
+.sign-up .username input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .username input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .username input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .username ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.sign-up .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+.sign-up .password input {
+  outline: none;
+  border: none;
+}
+.sign-up .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .password input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.sign-up .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.sign-up .password .show-hide {
+  margin-right: -5em;
+}
+.sign-up .login {
+  padding: 1em;
+  background: #0421f9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  align-content: center;
+}
+.sign-up .createAccount {
+  padding: 1em;
+  background-color: #0421f9;
+  color: #0d3eee;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: right;
+  font-size: 0.9em;
+}
+.sign-up .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+.sign-up .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
