@@ -1,0 +1,124 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100vh;
+}
+
+.log-in {
+  background: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+}
+.log-in .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 0em;
+}
+.log-in .email input {
+  outline: none;
+  border: none;
+}
+.log-in .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .email input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.log-in .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+.log-in .password input {
+  outline: none;
+  border: none;
+}
+.log-in .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .password input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+.log-in .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+.log-in .password .show-hide {
+  margin-right: -5em;
+}
+.log-in .login {
+  padding: 1em;
+  background: #0421f9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  align-content: center;
+}
+.log-in .login {
+  padding: 1em;
+  background-color: #0421f9;
+  color: #0d3eee;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: right;
+  font-size: 0.9em;
+}
+.log-in .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+.log-in .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
