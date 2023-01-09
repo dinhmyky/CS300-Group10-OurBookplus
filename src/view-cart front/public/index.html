@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>View Cart</title>
+</head>
+<body>
+<div class="view-cart">
+<div class="btn-group" style="width:100%">
+  <img src="Our Book+ logo.png" alt="Logo" style="width:10%" ALIGN=LEFT>
+  <button style="width:15%">Home</button>
+  <button style="width:15%">Search Book</button>
+  <button style="width:15%">Share Book</button>
+  <button style="width:15%">Q&A</button>
+  <button style="width:15%">Cart</button>
+  <button style="width:15%">Log in</button>
+</div>
+<div class="cd-cart cd-cart--empty js-cd-cart">
+  <a href="#0" class="cd-cart__trigger text-replace">
+    Cart
+    <ul class="cd-cart__count"> <!-- cart items count -->
+      <li>0</li>
+      <li>0</li>
+    </ul> <!-- .cd-cart__count -->
+  </a>
+
+  <div class="cd-cart__content">
+    <div class="cd-cart__layout">
+      <header class="cd-cart__header">
+        <h2>Cart</h2>
+        <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+      </header>
+      
+      <div class="cd-cart__body">
+        <ul>
+          <!-- products added to the cart will be inserted here using JavaScript -->
+        </ul>
+      </div>
+
+      <footer class="cd-cart__footer">
+        <a href="#0" class="cd-cart__checkout">
+          <em>Checkout - $<span>0</span>
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+            </svg>
+          </em>
+        </a>
+      </footer>
+    </div>
+  </div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+<div class="cd-cart__body">
+  <ul>
+    <li class="cd-cart__product">
+      <div class="cd-cart__image">
+        <label class="container">
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <img src="51DF6ZR8G7L._AC_SY780_.jpg" alt="Cover" style="width: 5%">
+      </div>
+      <div class="cd-cart__details">
+        <h3 class="truncate"><a href="#0">Title</a></h3>
+        <h3 class="truncate"><a href="#0">Author</a></h3>
+        <div class="cd-cart__actions">
+        </div>
+      </div>
+    </li>
+    <!-- other products added to the cart -->
+  </ul>
+</div>
+<div id="confirmButton">
+  <button type="confirm">Confirm</button> 
+</div>
+</div>
+</body></html>
