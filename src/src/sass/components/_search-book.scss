@@ -37,6 +37,7 @@
                 font-size: 1.4rem;
                 font-weight: 600;
                 text-transform: capitalize;
+                margin-top: 10px;
                 margin-bottom: 16px;
             }
 
@@ -73,6 +74,7 @@
 
         @include tablet {
             display: block;
+            margin-top: 3rem;
             margin-bottom: 2rem;
         }
     }

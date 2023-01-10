@@ -1,54 +1,23 @@
-// const product_01_image_01 = require('../images/products/product-01 (1).jpg')
-// const product_01_image_02 = require('../images/products/product-01 (2).jpg')
-// // const product_01_image_03 = require('../images/products/product-01 (3).jpg').default
-
-// const product_02_image_01 = require('../images/products/product-02 (1).jpg')
-// const product_02_image_02 = require('../images/products/product-02 (2).jpg')
-
-// const product_03_image_01 = require('../images/products/product-03 (1).jpg')
-// const product_03_image_02 = require('../images/products/product-03 (2).jpg')
-
-// const product_04_image_01 = require('../images/products/product-04 (1).jpg')
-// const product_04_image_02 = require('../images/products/product-04 (2).jpg')
-
-// const product_05_image_01 = require('../images/products/product-05 (1).jpg')
-// const product_05_image_02 = require('../images/products/product-05 (2).jpg')
-
-// const product_06_image_01 = require('../images/products/product-06 (1).jpg')
-// const product_06_image_02 = require('../images/products/product-06 (2).jpg')
-
-// const product_07_image_01 = require('../images/products/product-07 (1).jpg')
-// const product_07_image_02 = require('../images/products/product-07 (2).jpg')
-
-// const product_08_image_01 = require('../images/products/product-08 (1).jpg')
-// const product_08_image_02 = require('../images/products/product-08 (2).jpg')
-
-// const product_09_image_01 = require('../images/products/product-09 (1).jpg')
-// const product_09_image_02 = require('../images/products/product-09 (2).jpg')
-
-// const product_10_image_01 = require('../images/products/product-10 (1).jpg')
-// const product_10_image_02 = require('../images/products/product-10 (2).jpg')
-
-// const product_11_image_01 = require('../images/products/product-11 (1).jpg')
-// const product_11_image_02 = require('../images/products/product-11 (2).jpg')
-
-// const product_12_image_01 = require('../images/products/product-12 (1).jpg')
-// const product_12_image_02 = require('../images/products/product-12 (2).jpg')
-
 const books = [
     {
         title: "Sherlock Homes",
         author: 'Arthur Conan Doyle',
         image: require('../images/booksImg/book1.jpg'),
+        image02: require('../images/booksImg/book1_2.jpg'),
+        image03: require('../images/booksImg/book1.jpg'),
+        image04: require('../images/booksImg/book1_2.jpg'),
         genreSlug: "Fiction",
         slug: "sherlock-homes",
         bookType: 'Ebook',
-        description:'....',
+        description:'Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.',
     },
     {
         title: "Harry Potter",
         author: 'J. K. Rowling',
         image: require('../images/booksImg/book2.jpg'),
+        image02: require('../images/booksImg/book2_2.jpg'),
+        image03: require('../images/booksImg/book2.jpg'),
+        image04: require('../images/booksImg/book2_2.jpg'),
         genreSlug: "Fiction",
         slug: "harry-potter",
         bookType: 'Both',
@@ -58,6 +27,9 @@ const books = [
         title: "Basic Microbiology",
         author: 'Denis R.Hill',
         image: require('../images/booksImg/book3.jpg'),
+        image02: require('../images/booksImg/book3.jpg'),
+        image03: require('../images/booksImg/book3.jpg'),
+        image04: require('../images/booksImg/book3.jpg'),
         genreSlug: "Science",
         slug: "basic-microbiology",
         bookType: 'Ebook',
@@ -67,6 +39,9 @@ const books = [
         title: "Biology",
         author: 'Keith Graham',
         image: require('../images/booksImg/book4.png'),
+        image02: require('../images/booksImg/book4.png'),
+        image03: require('../images/booksImg/book4.png'),
+        image04: require('../images/booksImg/book4.png'),
         genreSlug: "Science",
         slug: "biology",
         bookType: 'Printed book',
@@ -76,6 +51,9 @@ const books = [
         title: "Basic Microbiology",
         author: 'Denis R.Hill',
         image: require('../images/booksImg/book3.jpg'),
+        image02: require('../images/booksImg/book3.jpg'),
+        image03: require('../images/booksImg/book3.jpg'),
+        image04: require('../images/booksImg/book3.jpg'),
         genreSlug: "Science",
         slug: "basic-microbiology",
         bookType: 'Ebook',
@@ -85,6 +63,9 @@ const books = [
         title: "Biology",
         author: 'Keith Graham',
         image: require('../images/booksImg/book4.png'),
+        image02: require('../images/booksImg/book4.png'),
+        image03: require('../images/booksImg/book4.png'),
+        image04: require('../images/booksImg/book4.png'),
         genreSlug: "Science",
         slug: "biology",
         bookType: 'Printed book',
@@ -94,6 +75,9 @@ const books = [
         title: "Sherlock Homes",
         author: 'Arthur Conan Doyle',
         image: require('../images/booksImg/book1.jpg'),
+        image02: require('../images/booksImg/book1_2.jpg'),
+        image03: require('../images/booksImg/book1.jpg'),
+        image04: require('../images/booksImg/book1_2.jpg'),
         genreSlug: "Fiction",
         slug: "sherlock-homes",
         bookType: 'Ebook',
@@ -103,6 +87,9 @@ const books = [
         title: "Harry Potter",
         author: 'J. K. Rowling',
         image: require('../images/booksImg/book2.jpg'),
+        image02: require('../images/booksImg/book2_2.jpg'),
+        image03: require('../images/booksImg/book2.jpg'),
+        image04: require('../images/booksImg/book2_2.jpg'),
         genreSlug: "Fiction",
         slug: "harry-potter",
         bookType: 'Both',

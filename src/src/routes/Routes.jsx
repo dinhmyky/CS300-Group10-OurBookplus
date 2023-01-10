@@ -9,6 +9,7 @@ import ShareBook from '../pages/ShareBook'
 import QandA from '../pages/QandA'
 import Login from '../pages/Login'
 import Product from '../pages/Product'
+import BorrowBook from '../components/BorrowBook'
 
 const Routes = () => {
     return (
@@ -17,6 +18,7 @@ const Routes = () => {
             <Route path='/searchbook/:slug' component={Product}/>
             <Route path='/searchbook' component={SearchBook}/>
             <Route path='/sharebook' component={ShareBook}/>
+            <Route path='/searchbook/:slug/borrow' component={BorrowBook}/>
             <Route path='/q&a' component={QandA}/>
             <Route path='/viewcart' component={ViewCart}/>
             <Route path='/login' component={Login}/>

@@ -2,7 +2,6 @@ import React, { useCallback, useState, useEffect, useRef } from 'react'
 
 import Helmet from '../components/Helmet'
 import CheckBox from '../components/CheckBox'
-
 import bookData from '../assets/data-loaded/books'
 import genre from '../assets/data-loaded/genre'
 import booktypes from '../assets/data-loaded/booktype'
@@ -10,7 +9,7 @@ import booktypes from '../assets/data-loaded/booktype'
 import Button from '../components/Button'
 import InfinityList from '../components/InfinityList'
 
-const Catalog = () => {
+const SearchBook = () => {
     useEffect(() => {
         // change background color with a random color
         const bgcolor = "#DDFFF9"
@@ -37,9 +36,6 @@ const Catalog = () => {
                 case "BOOK TYPE":
                     setFilter({...filter, booktype: [...filter.booktype, item.booktype]})
                     break
-                // case "SIZE":
-                //     setFilter({...filter, size: [...filter.size, item.size]})
-                //     break
                 default:
             }
         } else {
@@ -74,14 +70,6 @@ const Catalog = () => {
                     return check !== undefined
                 })
             }
-
-            // if (filter.size.length > 0) {
-            //     temp = temp.filter(e => {
-            //         const check = e.size.find(size => filter.size.includes(size))
-            //         return check !== undefined
-            //     })
-            // }
-
             setProducts(temp)
         },
         [filter, productList],
@@ -148,7 +136,7 @@ const Catalog = () => {
                     </div>
                 </div>
                 <div className="catalog__filter__toggle">
-                    <Button size="sm" onClick={() => showHideFilter()}>bộ lọc</Button>
+                    <Button size="sm" onClick={() => showHideFilter()}>Filter</Button>
                 </div>
                 <div className="catalog__content">
                     <InfinityList
@@ -160,4 +148,4 @@ const Catalog = () => {
     )
 }
 
-export default Catalog
+export default SearchBook

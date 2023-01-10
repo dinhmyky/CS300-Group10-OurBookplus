@@ -12,7 +12,7 @@ const Product = props => {
 
     const product = bookData.getBookBySlug(props.match.params.slug)
 
-    const relatedProducts = bookData.getBooks(6)
+    const relatedProducts = bookData.getAllBooks()
 
     React.useEffect(() => {
         window.scrollTo(0,0)
@@ -23,32 +23,6 @@ const Product = props => {
             <Section>
                 <SectionBody>
                     <ProductView product={product}/>
-                </SectionBody>
-            </Section>
-            <Section>
-                <SectionTitle>
-                    Khám phá thêm
-                </SectionTitle>
-                <SectionBody>
-                    <Grid
-                        col={4}
-                        mdCol={2}
-                        smCol={1}
-                        gap={20}
-                    >
-                        {
-                            relatedProducts.map((item, index) => (
-                                <BookCard
-                                    key={index}
-                                    img={item.image}
-                                    
-                                    name={item.title}
-                                    author={item.author}
-                                    slug={item.slug}
-                                />   
-                            ))
-                        }
-                    </Grid>
                 </SectionBody>
             </Section>
         </Helmet>

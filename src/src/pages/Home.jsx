@@ -40,7 +40,7 @@ const Home = () => {
                         col={3}
                         mdCol={2}
                         smCol={1}
-                        gap={20}
+                        gap={30}
                     >
                         {
                             features.map((item, index) => <Link key={index} to="/policy">
@@ -67,7 +67,7 @@ const Home = () => {
                         col={4}
                         mdCol={2}
                         smCol={1}
-                        gap={20}
+                        gap={100}
                     >
                         {
                             bookData.getAllBooks().map((item, index) => (

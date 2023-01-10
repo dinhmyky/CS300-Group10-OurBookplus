@@ -1,5 +1,3 @@
-// import img1 from "../assets/images/slider/1.png"
-// import img2 from "../assets/images/slider/2.png"
 import React from 'react'
 import SimpleImageSlider from "react-simple-image-slider";
 const images = [

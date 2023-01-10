@@ -1,9 +1,10 @@
-import React from 'react'
+import '../assets/boxicons-2.0.7/css/boxicons.min.css'
+import React, {useRef} from 'react'
 import PropTypes from 'prop-types'
 
 const CheckBox = props => {
 
-    const inputRef = React.useRef(null)
+    const inputRef = useRef(null)
 
     const onChange = () => {
         if (props.onChange) {
