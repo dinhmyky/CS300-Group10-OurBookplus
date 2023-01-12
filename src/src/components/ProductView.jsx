@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import { withRouter } from 'react-router'
 import { useDispatch } from 'react-redux'
+import { useHistory } from "react-router-dom";
 
 import Button from './Button'
 
@@ -13,8 +14,15 @@ const ProductView = props => {
 //   const navigateToBorrow = () => {
 //     navigate('/borrow');
 //   };
-
+    
     const product = props.product
+    // const slug=product.slug
+    // const history = useHistory(); 
+    // const routeChange = () =>{ 
+    //     history.push(slug+'/borrow');
+    // }
+
+    //const [products, setProducts] = useState(product)
 
     const [previewImg, setPreviewImg] = useState(product.img)
 
@@ -37,10 +45,15 @@ const ProductView = props => {
     }, [product])
 
     const borrowBook = () => {
-        let newItem = {
-            slug: product.slug,
-        }
-        props.history.push('/searchbook/'+newItem.slug+'/borrow')
+        // let newItem = {
+        //     slug: product.slug,
+        // }
+        //setProducts(product);
+        props.history.push({
+            state: product.slug,
+            pathname:'/borrow', 
+            //state: {image: product.image, title: product.title, author: product.author, description: product.description}, 
+        })
     }
 
     // const goToBorrow = () => {
@@ -75,7 +88,7 @@ const ProductView = props => {
                     {product.author}
                 </h3>
                 <div className="product__info__item">
-                    <div className="product__info__item__content" dangerouslySetInnerHTML={{__html: product.description}}></div>
+                    <div className="product__info__item__content"> {product.description}</div>
                 </div>
                 <div className="product__info__item">
                     <Button onClick={() => borrowBook()}>Borrow</Button>

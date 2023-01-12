@@ -10,9 +10,10 @@ import bookData from '../assets/data-loaded/books'
 
 const Product = props => {
 
-    const product = bookData.getBookBySlug(props.match.params.slug)
+    const product = bookData.getBookBySlug(props.match.params.slug);
+    console.log(product);
 
-    const relatedProducts = bookData.getAllBooks()
+    const relatedProducts = bookData.getAllBooks();
 
     React.useEffect(() => {
         window.scrollTo(0,0)

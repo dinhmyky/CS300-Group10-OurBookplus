@@ -23,11 +23,14 @@
 
         &__list {
             @include flex(flex-start, flex-start);
+            width: 330px;
+            height: 495px;
             flex-direction: row;
             justify-content: space-between;
             margin-right: 100px;
             margin-top: 500px;
             margin-bottom: 10px;
+            gap: 10px;
             &__item {
                 cursor: pointer;
             }
@@ -75,14 +78,14 @@
         }
 
         &__title {
-            margin-left: 170px;
+            margin-left: 70px;
             color: $txt-main-color;
             font-size: 2.3rem;
             font-weight: 450;
             margin-bottom: 1rem;
         }
         &__author {
-            margin-left: 170px;
+            margin-left: 70px;
             color: $txt-second-color;
             font-size: 1.7rem;
             margin-top: 15px;
@@ -90,7 +93,7 @@
         }
 
         &__item {
-            margin-left: 170px;
+            margin-left: 70px;
             margin-top: 2rem;
             &__content{
                 font-size: 1.5rem;
@@ -110,7 +113,12 @@
                 margin-bottom: 1rem;
             }
 
-            
+            &__content {
+                text-align: justify;
+                color: $txt-main-color;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
 
             &__list {
                 @include flex(center, flex-start);

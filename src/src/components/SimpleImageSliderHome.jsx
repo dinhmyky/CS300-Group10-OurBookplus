@@ -7,7 +7,7 @@ const images = [
 // const { ref, width = 3.908, height = 1 } = useResizeObserver();
 const SimpleImageSliderHome = () => {
   return (
-    <div>
+    <div style={{objectFit: 'cover'}}>
         <SimpleImageSlider
         width={1520}
         height={388.941}
