@@ -1,10 +1,9 @@
-.product {
+.product{
     @include flex(flex-start, flex-start);
 
     @include mobile {
         flex-direction: column;
     }
-
     &__images {
         @include flex(flex-start, flex-start);
         flex-direction: row;
@@ -49,8 +48,9 @@
 
     &__info {
         flex-grow: 1;
-        position: sticky;
-        top: $header-shrink-height;
+        // position: sticky;
+        position: absolute;
+        // top: $header-shrink-height;
         padding-top: 2rem;
 
         @include mobile {
@@ -78,14 +78,14 @@
         }
 
         &__title {
-            margin-left: 70px;
+            margin-left: 600px;
             color: $txt-main-color;
             font-size: 2.3rem;
             font-weight: 450;
             margin-bottom: 1rem;
         }
         &__author {
-            margin-left: 70px;
+            margin-left: 600px;
             color: $txt-second-color;
             font-size: 1.7rem;
             margin-top: 15px;
@@ -93,7 +93,7 @@
         }
 
         &__item {
-            margin-left: 70px;
+            margin-left: 600px;
             margin-top: 2rem;
             &__content{
                 font-size: 1.5rem;
@@ -118,6 +118,7 @@
                 color: $txt-main-color;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
+                margin-right: 100px;
             }
 
             &__list {
@@ -187,6 +188,7 @@
             }
 
             button {
+                margin-top: 10px;
                 margin-right: 1rem;
                 margin-bottom: 1rem;
             }

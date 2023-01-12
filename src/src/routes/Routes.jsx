@@ -10,7 +10,6 @@ import QandA from '../pages/QandA'
 import Login from '../pages/Login'
 import Product from '../pages/Product'
 import BorrowBook from '../components/BorrowBook'
-import ProductView from '../components/ProductView'
 
 const Routes = () => {
     return (

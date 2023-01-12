@@ -37,60 +37,45 @@ const BorrowBook = () => {
     const stateParamValue=useLocation().state;
     const product=bookData.getBookBySlug(stateParamValue);
     console.log(product);
-
-    // const borrowBook = () => {
-    //     let newItem = {
-    //         slug: product.slug,
-    //     }
-    //     props.history.push('/borrow')
+    // const product={
+    //     title: "Sherlock Homes",
+    //     author: 'Arthur Conan Doyle',
+    //     image: require('../assets/images/booksImg/book1.jpg'),
+    //     image02: require('../assets/images/booksImg/book1_2.jpg'),
+    //     image03: require('../assets/images/booksImg/book1.jpg'),
+    //     image04: require('../assets/images/booksImg/book1_2.jpg'),
+    //     genreSlug: "Fiction",
+    //     slug: "sherlock-homes",
+    //     bookType: 'Ebook',
+    //     description:'Sherlock Holmes is a fictional detective created by British author Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.',
     // }
 
-    // const goToBorrow = () => {
-    //     props.history.push('/borrow')
-    // }
-    return(
-        <div className="borrowbook">
-        {
-          
-            <div className="details">
-              <div className="big-img">
-                <img src={product.image} alt=""/>
-              </div>
-
-              <div className="box">
-                <div className="row">
-                  <h2>{product.title}</h2>
+    return (
+        <div className="product">
+            <div className="product__images">
+                <div className="product__images__main">
+                    <img src={product.image} alt="" />
                 </div>
-
-                <p>{product.author}</p>
-                <p>{product.description}</p>
-
-              </div>
+                
             </div>
-          
-        }
-      </div>
-      );
-    // return (
-    //     <div className="borrow">
-    //             <div className="borrow__images">
-    //                 <img src={image} alt="" />
-    //             </div>
-    //             <div className="borrow__info">
-    //             <h3 className="borrow__info__title">{title}</h3>
-    //             <h3 className="borrow__info__author">{author}</h3>
-    //             <div className="borrow__info__item__content" dangerouslySetInnerHTML={{__html: description}}></div>
-    //             </div>
-    //     </div>
-        
-    // )
+            <div className="product__info">
+                <h3 className="product__info__title">{product.title}</h3>
+                <h3 className="product__info__author">
+                    {product.author}
+                </h3>
+                <div className="product__info__item">
+                    <div className="product__info__item__content"> {product.description}</div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 // BorrowBook.propTypes = {
 //     product: PropTypes.object.isRequired
 // }
 
-export default withRouter(BorrowBook)
+//export default withRouter(BorrowBook)
 
 // const BorrowBook = () => {
 //   return (
@@ -98,4 +83,4 @@ export default withRouter(BorrowBook)
 //   )
 // }
 
-// export default BorrowBook
+export default BorrowBook
