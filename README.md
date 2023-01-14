@@ -1,4 +1,4 @@
-# CS300-Group10
+# CS300 Group10: OurBook+
  
 ## Members:
 
@@ -13,8 +13,8 @@
 ## Folder code front end by Kỳ (Homepage, Search book, View book detail, Borrow book): 
 https://github.com/dinhmyky/CS300-Group10-OurBookplus/tree/main/src/src 
 
-## Screenshot of front end by Kỳ (Homepage, Search book, View book detail, Borrow book): 
-
+## Screenshots of front end by Kỳ (Homepage, Search book, View book detail, Borrow book): 
+https://github.com/dinhmyky/CS300-Group10-OurBookplus/tree/main/src/src/screenshotFrontendKy 
 
 ## Steps to run code front end by Kỳ (Homepage, Search book, View book detail, Borrow book):
 ### 1. After downloading zip code file from github, extract file
