@@ -6,7 +6,7 @@ import BookCard from './BookCard'
 
 const InfinityList = props => {
 
-    const perLoad = 6 // items each load
+    const perLoad = 9 // items each load
 
     const listRef = useRef(null)
     
@@ -20,7 +20,7 @@ const InfinityList = props => {
         setData(props.data.slice(0, perLoad))
         setIndex(1)
     }, [props.data])
-
+    
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (listRef && listRef.current) {
@@ -32,6 +32,10 @@ const InfinityList = props => {
             
         })
     }, [listRef])
+    // const handleScroll = event => {
+    //     console.log('scrollTop: ', event.currentTarget.scrollTop);
+    //     console.log('offsetHeight: ', event.currentTarget.offsetHeight);
+    //   };
 
     useEffect(() => {
         const getItems = () => {
@@ -52,11 +56,11 @@ const InfinityList = props => {
 
     return (
         <div ref={listRef}>
-            <Grid
+            <Grid 
                 col={3}
-                mdCol={2}
+                mdCol={3}
                 smCol={1}
-                gap={20}
+                gap={45}
             >
                 {
                     data.map((item, index) => (

@@ -8,6 +8,7 @@ import booktypes from '../assets/data-loaded/booktype'
 // import size from '../assets/data-loaded/product-size'
 import Button from '../components/Button'
 import InfinityList from '../components/InfinityList'
+import SearchBar from '../components/SearchBar'
 
 const SearchBook = () => {
     useEffect(() => {
@@ -84,7 +85,7 @@ const SearchBook = () => {
     const showHideFilter = () => filterRef.current.classList.toggle('active')
 
     return (
-        <Helmet title="Filter">
+        <Helmet title="Search Book">
             <div className="catalog">
                 <div className="catalog__filter" ref={filterRef}>
                     <div className="catalog__filter__close" onClick={() => showHideFilter()}>
@@ -138,10 +139,14 @@ const SearchBook = () => {
                 <div className="catalog__filter__toggle">
                     <Button size="sm" onClick={() => showHideFilter()}>Filter</Button>
                 </div>
+                
                 <div className="catalog__content">
-                    <InfinityList
-                        data={products}
-                    />
+                    <SearchBar placeholder="Search for book's title, author" data={products} />
+                    <div className="bookresults">
+                        <InfinityList
+                            data={products}
+                        />
+                    </div>
                 </div>
             </div>
         </Helmet>

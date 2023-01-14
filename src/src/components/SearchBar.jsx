@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import "./SearchBar.css";
-import SearchIcon from "@material-ui/icons/Search";
-import CloseIcon from "@material-ui/icons/Close";
+import searchwhite from '../assets/images/searchwhite.png'
+// import iconclose from '../assets/images/iconclose.png'
+import { useHistory } from "react-router-dom";
+// import "./SearchBar.css";
+// import SearchIcon from "@material-ui/icons/Search";
+// import CloseIcon from "@material-ui/icons/Close";
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
@@ -25,6 +28,10 @@ function SearchBar({ placeholder, data }) {
     setFilteredData([]);
     setWordEntered("");
   };
+  const history = useHistory(); 
+  const pushLink=(slug)=>{
+    history.push('searchbook/'+slug)
+  }
 
   return (
     <div className="search">
@@ -35,25 +42,45 @@ function SearchBar({ placeholder, data }) {
           value={wordEntered}
           onChange={handleFilter}
         />
+        
         <div className="searchIcon">
-          {filteredData.length === 0 ? (
-            <SearchIcon />
-          ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
-          )}
+            <img src={searchwhite} alt=""/>
         </div>
+        
       </div>
       {filteredData.length != 0 && (
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <a className="dataItem" href={value.link} target="_blank">
+              <a className="dataItem" href={'searchbook/'+value.slug}>
                 <p>{value.title} </p>
               </a>
             );
           })}
         </div>
       )}
+      {/* <div className="dataResult">
+          {data
+            .filter((item) => {
+              const searchTerm = wordEntered.toLowerCase();
+              const title = item.title.toLowerCase();
+
+              return (
+                title.toLowerCase().includes(searchTerm)
+              );
+            })
+            .slice(0, 10)
+            .map((item) => (
+              <div
+                onClick={pushLink(item.slug)}
+                className="dataItem"
+                key={item.title}
+              >
+                {item.title}
+              </div>
+            ))}
+        </div> */}
+      
     </div>
   );
 }

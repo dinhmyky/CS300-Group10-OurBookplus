@@ -33,7 +33,14 @@ const Home = () => {
                 </SectionBody>
             </Section>
             {/* end slide image */}
-            
+
+            {/* start your appointment */}
+            {/* <Section>
+                <YourAppointment/>
+            </Section> */}
+            {/* end your appointment */}
+
+            {/* start intro to features */}
             <Section>
                 <SectionBody>
                     <Grid
