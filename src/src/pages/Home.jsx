@@ -35,9 +35,9 @@ const Home = () => {
             {/* end slide image */}
 
             {/* start your appointment */}
-            {/* <Section>
+            <Section>
                 <YourAppointment/>
-            </Section> */}
+            </Section>
             {/* end your appointment */}
 
             {/* start intro to features */}
