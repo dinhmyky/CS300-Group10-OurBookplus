@@ -141,7 +141,7 @@ const SearchBook = () => {
                 </div>
                 
                 <div className="catalog__content">
-                    <SearchBar placeholder="Search for book's title, author" data={products} />
+                    <SearchBar placeholder="Search for book's title" data={products} />
                     <div className="bookresults">
                         <InfinityList
                             data={products}
