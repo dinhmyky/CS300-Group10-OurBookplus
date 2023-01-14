@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Share Book</title>
+  <title>Display Message</title>
+        <script type="text/javascript">
+            function showMessage() {
+              if (document.getElementById("bookTitle").value == "" || 
+              document.getElementById("bookAuthor").value==""||document.getElementById("bookAddress").value=="") { alert("Not enough information. Upload Failed!");}
+              else 
+              {
+                alert("Successfully Upload");
+              document.getElementById("bookTitle").value='';
+              document.getElementById("bookAuthor").value='';
+              document.getElementById("bookAddress").value='';
+              document.getElementById("btn-1").reset();
+              document.getElementById("btn-2").reset();
+              document.getElementById("btn-3").reset();
+              document.getElementById("btn-4").reset();
+              }
+            }
+        </script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="share-book">
+  <div class="btn-group" style="width:100%">
+    <img src="Our Book+ logo.png" alt="Logo" style="width:10%" ALIGN=LEFT>
+    <button style="width:15%">Home</button>
+    <button style="width:15%">Search Book</button>
+    <button style="width:15%">Share Book</button>
+    <button style="width:15%">Q&A</button>
+    <button style="width:15%">Cart</button>
+    <button style="width:15%">Log in</button>
+  </div>
+  <div class="bookTitle">
+    <label for="bookTitle">Book Title</label>
+    <div class="sec-2">
+      <input id="bookTitle" type="bookTitle" name="bookTitle" placeholder="Fill in Book Title here"/>
+    </div>
+  </div>
+  <div class="bookAuthor">
+    <label for="bookAuthor">Book Author</label>
+    <div class="sec-2">
+      <input id="bookAuthor" type="bookAuthor" name="bookAuthor" placeholder="Fill in Book Author here"/>
+    </div>
+  </div>
+  <p>Upload's book photos</p>
+  <div class="photo-button" style="width:100%">
+    <input type="file" id="btn-1" hidden/>
+    <label for="btn-1">Cover photo +</label>
+    <input type="file" id="btn-2" hidden/>
+    <label for="btn-2">Content photo +</label>
+    <input type="file" id="btn-3" hidden/>
+    <label for="btn-3">Chapter 1 (first page) +</label>
+    <input type="file" id="btn-4" hidden/>
+    <label for="btn-4">Last chapter (last page) +</label>
+  </div>
+  <div class="address">
+    <label for="address">Address</label>
+    <div class="sec-2">
+      <input id="bookAddress" type="address" name="address" placeholder="Address?"/>
+    </div>
+  </div>
+  <div id="uploadButton">
+    <button id="uploadButton" onClick="showMessage()">Upload</button> 
+    </div>
+  <div id="helpButton">
+    <button type="help">Help?</button> 
+  </div>
+<!-- partial -->
+  
+</body></html>
